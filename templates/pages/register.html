@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Register{% endblock title %}
+
+{% block content %}
+	<!-- register -->
+	<div class="pages section">
+		<div class="container">
+			<div class="pages-head">
+				<h3>REGISTER</h3>
+			</div>
+			<div class="register">
+				<div class="row">
+					<form class="col s12">
+						<div class="input-field">
+							<input type="text" class="validate" placeholder="Name" required>
+						</div>
+						<div class="input-field">
+							<input type="email" placeholder="Email" class="validate" required>
+						</div>
+						<div class="input-field">
+							<input type="password" placeholder="Password" class="validate" required>
+						</div>
+						<h6>Already have an account <a href="login.html">Login</a></h6>
+						<div class="btn button-default">REGISTER</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end register -->
+{% endblock content %}
+

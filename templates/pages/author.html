@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% block title %}Author{% endblock title %}
+{% load static %}
+{% block content %}
+<!-- author page -->
+	<div class="author-page pages section">
+		<div class="container">
+			<div class="post-content">
+				<div class="author-profile">
+					<div class="row">
+						<div class="col 12">
+							<img src="{% static "img/author-page.jpg" %}" alt="">
+							<div class="content">
+								<h5>John Doe</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil recusandae ea, quasi quidem maiores quos enim nemo porro praesentium? Perferendis quidem debitis provident, veritatis, voluptatem assumenda natus nobis. Unde, eaque!</p>
+								<ul>
+									<li><a href=""><i class="fa fa-facebook"></i></a></li>
+									<li><a href=""><i class="fa fa-twitter"></i></a></li>
+									<li><a href=""><i class="fa fa-google"></i></a></li>
+									<li><a href=""><i class="fa fa-linkedin"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="author-post">
+				<div class="row">
+					<div class="col s12">
+						<div class="content">
+							<img src="{% static "img/post1.jpg" %}" alt="">
+							<div class="post">
+								<h3><a href="">Traveling during the Rainy season</a></h3>
+								<div class="date">March 10, 2017</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, quas officiis fuga iusto molestias vel eius.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s12">
+						<div class="content">
+							<img src="{% static "img/post2.jpg" %}" alt="">
+							<div class="post">
+								<h3><a href="">Fashion Style that is too Expensive</a></h3>
+								<div class="date">March 10, 2017</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, quas officiis fuga iusto molestias vel eius.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s12">
+						<div class="content">
+							<img src="{% static "img/post3.jpg" %}" alt="">
+							<div class="post">
+								<h3><a href="">Be good Leaders hope the Community</a></h3>
+								<div class="date">March 10, 2017</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, quas officiis fuga iusto molestias vel eius.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pagination-blog">
+					<ul>
+						<li class="active"><a href="">1</a></li>
+						<li><a href="">2</a></li>
+						<li><a href="">3</a></li>
+						<li><a href="">4</a></li>
+						<li><a href="">5</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="clear-both"></div>
+	</div>
+	<!-- end author page -->
+{% endblock content %}
+

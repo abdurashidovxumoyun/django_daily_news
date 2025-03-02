@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Search{% endblock title %}
+
+{% block content %}
+	<!-- search result -->
+	<div class="search-result pages section">
+		<div class="container">
+			<div class="post-content">
+				<div class="title-result">
+					<h5><a href="">travelling</a> - search result</h5>
+					<p>Lorem ipsum dolor sit amet consectetur</p>
+				</div>
+				<div class="search-form">
+					<input type="search" value="travelling">
+					<button type="button" class="button"><i class="fa fa-search"></i></button>
+					<div class="clear-both"></div>
+				</div>
+				<div class="author-post">
+					<div class="row">
+						<div class="col s12">
+							<div class="content">
+								<img src="{% static "img/post1.jpg" %}" alt="">
+								<div class="post">
+									<h3><a href="">Traveling during the Rainy season</a></h3>
+									<div class="date">March 10, 2017</div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, quas officiis fuga iusto molestias vel eius.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12">
+							<div class="content">
+								<img src="{% static "img/post2.jpg" %}" alt="">
+								<div class="post">
+									<h3><a href="">Fashion Style that is too Expensive</a></h3>
+									<div class="date">March 10, 2017</div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, quas officiis fuga iusto molestias vel eius.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12">
+							<div class="content">
+								<img src="{% static "img/post3.jpg" %}" alt="">
+								<div class="post">
+									<h3><a href="">Be good Leaders hope the Community</a></h3>
+									<div class="date">March 10, 2017</div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, quas officiis fuga iusto molestias vel eius.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="pagination-blog">
+						<ul>
+							<li class="active"><a href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+							<li><a href="">4</a></li>
+							<li><a href="">5</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clear-both"></div>
+	</div>
+	<!-- end search result -->
+{% endblock content %}
+

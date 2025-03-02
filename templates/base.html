@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static "css/materialize.css" %}">
+	<link rel="stylesheet" href="{% static "font-awesome/css/font-awesome.min.css" %}">
+	<link rel="stylesheet" href="{% static "css/normalize.css" %}">
+	<link rel="stylesheet" href="{% static "css/owl.carousel.css" %}">
+	<link rel="stylesheet" href="{% static "css/owl.theme.css" %}">
+	<link rel="stylesheet" href="{% static "css/owl.transitions.css" %}">
+	<link rel="stylesheet" href="{% static "css/fakeLoader.css" %}">
+	<link rel="stylesheet" href="{% static "css/magnific-popup.css" %}">
+	<link rel="stylesheet" href="{% static "css/style.css" %}">
+	
+	<link rel="shortcut icon" href="{% static "img/favicon.png" %}">
+</head>
+<body>
+
+    {% include "layouts/header.html" %}
+    {% block content %}{% endblock content %}
+
+	<div id="fakeLoader"></div>
+	
+    {% include "layouts/footer.html" %}
+    
+	<script src="{% static "js/jquery.min.js" %}"></script>
+	<script src="{% static "js/materialize.min.js" %}"></script>
+	<script src="{% static "js/owl.carousel.min.js" %}"></script>
+	<script src="{% static "js/fakeLoader.min.js" %}"></script>
+	<script src="{% static "js/jquery.magnific-popup.min.js" %}"></script>
+	<script src="{% static "js/main.js" %}"></script>
+</body>
+</html>

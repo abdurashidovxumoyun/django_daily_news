@@ -1,0 +1,39 @@
+<!-- navbar top -->
+<div class="navbar-top">
+    <div class="side-nav-panel-left">
+        <a href="#" data-activates="slide-out-left" class="side-nav-left"><i class="fa fa-bars"></i></a>
+    </div>
+    <!-- site brand	 -->
+    <div class="site-brand">
+        <a href="index.html"><h1>DAILY NEWS</h1></a>
+    </div>
+    <!-- end site brand	 -->
+    <div class="side-nav-panel-right">
+        <a href="contact.html"><i class="fa fa-envelope-o"></i></a>
+    </div>
+</div>
+<!-- end navbar top -->
+
+
+<!-- side nav panel-->
+<div class="side-nav-panel-left">
+    <ul id="slide-out-left" class="side-nav side-nav-panel collapsible">
+        <li class="li-search">
+            <div class="search-form">
+                <input type="search" placeholder="Search....">
+                <button class="button"><i class="fa fa-search"></i></button>
+            </div>
+            <div class="clear-both"></div>
+        </li>
+        <li><a href="{% url "home" %}"><i class="fa fa-home"></i>Home</a></li>
+        <li><a href="{% url "single-post" %}"><i class="fa fa-file-o"></i>Single Post</a></li>
+        <li><a href="{% url "author" %}"><i class="fa fa-edit"></i>Author Page</a></li>
+        <li><a href="{% url "search" %}"><i class="fa fa-search"></i>Search Result</a></li>
+        <li><a href="{% url "about" %}"><i class="fa fa-user"></i>About Us</a></li>
+        <li><a href="{% url "contact" %}"><i class="fa fa-envelope-o"></i>Contact Us</a></li>
+        <li><a href="{% url "error" %}"><i class="fa fa-cog"></i>404 Pages</a></li>
+        <li><a href="{% url "login" %}"><i class="fa fa-sign-in"></i>Login</a></li>
+        <li><a href="{% url "register" %}"><i class="fa fa-user-plus"></i>Register</a></li>
+    </ul>
+</div>
+<!-- end side nav panel-->

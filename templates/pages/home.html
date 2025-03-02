@@ -1,0 +1,214 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+
+
+{% block content %}
+
+<!-- slider -->
+<div class="container">
+    <div class="slider">
+        
+        <ul class="slides">
+            <li>
+                <img src="{% static "img/slide1.jpg" %}" alt="">
+                <div class="caption slider-content left-aligh ">
+                    <h2><a href="">Traveling during the Rainy season</a></h2>
+                    <div class="date">March 10, 2017</div>
+                </div>
+            </li>
+            <li>
+                <img src="{% static "img/slide2.jpg" %}" alt="">
+                <div class="caption slider-content left-aligh">
+                    <h2><a href="">Fashion Style that is too Expensive</a></h2>
+                    <div class="date">March 10, 2017</div>
+                </div>
+            </li>
+            <li>
+                <img src="{% static "img/slide3.jpg" %}" alt="">
+                <div class="caption slider-content left-aligh">
+                    <h2><a href="">Be good Leaders hope the Community</a></h2>
+                    <div class="date">March 10, 2017</div>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+</div>
+<!-- end slider -->
+
+<!-- post -->
+<div class="post">
+    {% for blog in posts %}
+    <div class="container">
+        <div class="border"></div>
+        <div class="row row-border">
+            <div class="col s6 col-left">
+                <div class="content">
+                    <h3><a href="">{{blog.title}}</a></h3>
+                    <span>By - <a href="">John Doe</a></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        {% comment %} <div class="row row-second">
+            <div class="col s6 col-left">
+                <div class="content">
+                    <h3><a href="">Traveling during the Rainy season</a></h3>
+                    <span>By - <a href="">John Doe</a></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    </div>
+                    </div>
+                    <div class="col s6">
+                        <div class="content">
+                            <h3><a href="">Traveling during the Rainy season</a></h3>
+                    <span>By - <a href="">John Doe</a></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    </div>
+                    </div>
+                    </div> {% endcomment %}
+    </div>
+    {% endfor %}
+</div>
+<!-- end post -->
+
+<!-- quote -->
+<div class="quote">
+    <div class="container">
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia neque cumque numquam assumenda debitis</p>
+            <span>By - <a href="">John Doe</a> | OPINION</span>
+        </div>
+    </div>
+</div>
+<!-- end quote -->
+
+<!-- post full -->
+<div class="post-full">
+    <div class="container">
+        <div class="row">
+            <div class="col s6">
+                <div class="content">
+                    <img src="{% static "img/post1.jpg" %}" alt="">
+                    <h3><a href="">Traveling during the Rainy season</a></h3>
+                    <span>By - <a href="">John Doe</a></span>
+                </div>
+            </div>
+            <div class="col s6">
+                <div class="content">
+                    <img src="{% static "img/post2.jpg" %}" alt="">
+                    <h3><a href="">Traveling during the Rainy season</a></h3>
+                    <span>By - <a href="">John Doe</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="border"></div>
+    </div>
+</div>
+<!-- end post full -->
+
+<!-- post -->
+<div class="post">
+    <div class="container">
+        <div class="row row-border">
+            <div class="col s6 col-left">
+                <div class="content">
+                    <h3><a href="">Traveling during the Rainy season</a></h3>
+                    <span>By - <a href="">John Doe</a></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                </div>
+            </div>
+            <div class="col s6">
+                <div class="content">
+                    <h3><a href="">Traveling during the Rainy season</a></h3>
+                    <span>By - <a href="">John Doe</a></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row row-second">
+            <div class="col s6 col-left">
+                <div class="content">
+                    <h3><a href="">Traveling during the Rainy season</a></h3>
+                    <span>By - <a href="">John Doe</a></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                </div>
+            </div>
+            <div class="col s6">
+                <div class="content">
+                    <h3><a href="">Traveling during the Rainy season</a></h3>
+                    <span>By - <a href="">John Doe</a></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end post -->
+
+<!-- gallery -->
+<div class="container">
+    <div class="gallery-title">
+        <h3>Gallery</h3>
+    </div>
+    <div class="gallery">
+        <div class="row">
+            <div class="col s6">
+                <a href="img/gallery1.jpg" class="image-popup"><img class="responsive-img" src="{% static "img/gallery1.jpg" %}" alt="sample image"></a>
+            </div>
+            <div class="col s6">
+                <a href="img/gallery2.jpg" class="image-popup"><img class="responsive-img" src="{% static "img/gallery2.jpg" %}" alt="sample image"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s6">
+                <a href="img/gallery3.jpg" class="image-popup"><img class="responsive-img" src="{% static "img/gallery3.jpg" %}" alt="sample image"></a>
+            </div>
+            <div class="col s6">
+                <a href="img/gallery4.jpg" class="image-popup"><img class="responsive-img" src="{% static "img/gallery4.jpg" %}" alt="sample image"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s6">
+                <a href="img/gallery5.jpg" class="image-popup"><img class="responsive-img" src="{% static "img/gallery5.jpg" %}" alt="sample image"></a>
+            </div>
+            <div class="col s6">
+                <a href="img/gallery6.jpg" class="image-popup"><img class="responsive-img" src="{% static "img/gallery6.jpg" %}" alt="sample image"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end gallery -->
+
+<!-- featured post -->
+<div class="container">
+    <div class="featured-post">
+        <h2>FEATURED POST</h2>
+        <div class="content">
+            <h3><a href="">Traveling during the Rainy season</a></h3>
+            <span>By - <a href="">John Doe</a></span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam voluptates, ab sequi accusamus.</p>
+        </div>
+        <div class="content">
+            <h3><a href="">Traveling during the Rainy season</a></h3>
+            <span>By - <a href="">John Doe</a></span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam voluptates, ab sequi accusamus.</p>
+        </div>
+        <div class="content">
+            <h3><a href="">Traveling during the Rainy season</a></h3>
+            <span>By - <a href="">John Doe</a></span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam voluptates, ab sequi accusamus.</p>
+        </div>
+        <div class="content-last">
+            <h3><a href="">Traveling during the Rainy season</a></h3>
+            <span>By - <a href="">John Doe</a></span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam voluptates, ab sequi accusamus.</p>
+        </div>
+    </div>
+</div>
+<!-- end featured post -->
+
+
+{% endblock content %}
