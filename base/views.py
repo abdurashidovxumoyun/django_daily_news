@@ -1,39 +1,40 @@
 from django.shortcuts import render
-from .models import Post
+from .models import *
+from django.views.generic import TemplateView, ListView, DetailView
 
 # Create your views here.
 
 
-def home(request):
+class home(TemplateView):
     template_name = 'pages/home.html'
-    return render(request=request, template_name=template_name)
+   
 
-def single_post(request):
-    template_name = 'pages/single-post.html'
-    posts = Post.objects.all()
-    context = {
-        'posts': posts
-    }
-    return render(request=request, template_name=template_name, context=context)
+class single_post(TemplateView):
+    model = Post
+    template_name='pages/single-post.html'
+    context_object_name = 'posts'
+    slug_field = 'slug'
+    slug_url_kwarg = 'slug'
+    
 
-def about(request):
+class about(TemplateView):
     template_name='pages/about-us.html'
-    return render(request=request, template_name=template_name)
+    
 
-def author(request):
-    return render(request=request, template_name='pages/author.html')
+class author(TemplateView):
+    template_name='pages/author.html'
 
-def search(request):
-    return render(request=request, template_name='pages/search.html')
+class search(TemplateView):
+    template_name='pages/search.html'
 
-def contact(request):
-    return render(request=request, template_name='pages/contact.html')
+class contact(TemplateView):
+    template_name='pages/contact.html'
 
-def error(request):
-    return render(request=request, template_name='pages/error.html')
+class error(TemplateView):
+    template_name='pages/error.html'
 
-def login(request):
-    return render(request=request, template_name='pages/login.html')
+class login(TemplateView):
+    template_name='pages/login.html'
 
-def register(request):
-    return render(request=request, template_name='pages/register.html')
+class register(TemplateView):
+    template_name='pages/register.html'

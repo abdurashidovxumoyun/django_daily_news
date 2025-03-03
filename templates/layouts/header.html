@@ -26,7 +26,9 @@
             <div class="clear-both"></div>
         </li>
         <li><a href="{% url "home" %}"><i class="fa fa-home"></i>Home</a></li>
+        {% if posts and posts.slug %}
         <li><a href="{% url "single-post" %}"><i class="fa fa-file-o"></i>Single Post</a></li>
+        {% endif %}
         <li><a href="{% url "author" %}"><i class="fa fa-edit"></i>Author Page</a></li>
         <li><a href="{% url "search" %}"><i class="fa fa-search"></i>Search Result</a></li>
         <li><a href="{% url "about" %}"><i class="fa fa-user"></i>About Us</a></li>
